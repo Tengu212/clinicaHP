@@ -1,0 +1,153 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #121212, #1d1d1d);
+    background-size: 400% 400%;
+    color: #e0e0e0;
+    animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Контейнер */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, #00ff8c, #06c232);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #06c232;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Основной блок */
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff8c;
+    text-align: center;
+}
+
+.about, .services, .contact {
+    margin-bottom: 50px;
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+}
+
+.about:hover, .services:hover, .contact:hover {
+    background-color: #242424;
+}
+
+/* Список услуг */
+.services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services ul li {
+    background: url('icons/checkmark.svg') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Контакты */
+.contact p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Подвал */
+footer {
+    background-color: #0a0a0a;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #06c232;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Стили для изображений */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.responsive-img:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для кнопок */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #000000, #333333);
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #00ff8c, #06c232);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #06c232, #00ff8c);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #218838, #00a860);
+}
